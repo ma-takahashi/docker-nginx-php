@@ -5,6 +5,8 @@ services:
     image: 864031815705.dkr.ecr.ap-northeast-1.amazonaws.com/docker-nginx-php/nginx
     ports:
       - 80:80
+    links:
+      - php
 
   php:
     image: 864031815705.dkr.ecr.ap-northeast-1.amazonaws.com/docker-nginx-php/php
